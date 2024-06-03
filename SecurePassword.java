@@ -1,5 +1,5 @@
 public class SecurePassword {
-   private String website;
+  private String website;
   private String username;
   private String password;
 
@@ -30,7 +30,9 @@ public class SecurePassword {
     public boolean isSecure() {
         return isLongEnough() && containsLowercase() && containsUppercase() && containsDigit() && containsSpecialSymbol();
     }
-
+    //received help from my great friend Bonnie Chen in creating the status method 
+    //thank you Bonnie <3 
+    
     // Returns a String that contains information about the security status of the current password
      public String status() {
         String conditions = "";
